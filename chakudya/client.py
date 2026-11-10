@@ -108,7 +108,10 @@ class ChakudyaClient:
             with urllib.request.urlopen(req, timeout=self.timeout) as res:
                 status, ctype, raw = res.status, res.headers.get("Content-Type", ""), res.read()
         except urllib.error.HTTPError as e:
-            status, ctype, raw = e.code, e.headers.get("Content-Type", "") if e.headers else "", e.read()
+            try:
+                status, ctype, raw = e.code, e.headers.get("Content-Type", "") if e.headers else "", e.read()
+            finally:
+                e.close()
         except (socket.timeout, TimeoutError):
             raise ChakudyaApiError(f"Request timed out after {self.timeout}s", 0) from None
         except urllib.error.URLError as e:
