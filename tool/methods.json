@@ -1,0 +1,466 @@
+{
+  "hand_written": {
+    "foods": [
+      "autocomplete",
+      "categories",
+      "create",
+      "get",
+      "list",
+      "lookup",
+      "remove",
+      "replace",
+      "update"
+    ],
+    "exchange": [
+      "create",
+      "get",
+      "list",
+      "remove",
+      "replace",
+      "update"
+    ],
+    "renal": [
+      "create",
+      "get",
+      "list",
+      "remove",
+      "replace",
+      "update"
+    ],
+    "formulas": [
+      "create",
+      "get",
+      "list",
+      "remove",
+      "replace",
+      "update"
+    ],
+    "packaged": [
+      "list",
+      "remove",
+      "scan",
+      "submit",
+      "update"
+    ],
+    "rag": [
+      "ingest",
+      "retrieve"
+    ],
+    "memory": [
+      "consolidate",
+      "recall",
+      "write"
+    ]
+  },
+  "generated": {
+    "activityEnergy": {
+      "bulk": "POST /activity-energy/bulk",
+      "calculate": "POST /activity-energy/calculate",
+      "list": "GET /activity-energy"
+    },
+    "admin": {
+      "activity": "GET /admin/activity",
+      "deleteKeysById": "DELETE /admin/keys/{id}",
+      "getKeys": "GET /admin/keys",
+      "getSummary": "GET /admin/summary",
+      "healthHistory": "GET /admin/health-history",
+      "monitoring": "GET /admin/monitoring",
+      "overview": "GET /admin/overview",
+      "postKeys": "POST /admin/keys",
+      "postSummary": "POST /admin/summary",
+      "usage": "GET /admin/usage"
+    },
+    "batch": {
+      "create": "POST /batch"
+    },
+    "biochemistry": {
+      "analytes": "GET /biochemistry/analytes",
+      "interpret": "POST /biochemistry/interpret",
+      "lookup": "GET /biochemistry/lookup",
+      "reference": "GET /biochemistry/reference"
+    },
+    "bmiForAge": {
+      "bulk": "POST /bmi-for-age/bulk",
+      "classify": "GET /bmi-for-age/classify",
+      "list": "GET /bmi-for-age"
+    },
+    "bmiForAgeUnder5": {
+      "bulk": "POST /bmi-for-age-under-5/bulk",
+      "classify": "GET /bmi-for-age-under-5/classify",
+      "list": "GET /bmi-for-age-under-5"
+    },
+    "burns": {
+      "energy": "POST /burns/energy",
+      "fluidResuscitation": "POST /burns/fluid-resuscitation",
+      "glycemicTargets": "POST /burns/glycemic-targets",
+      "indirectCalorimetry": "POST /burns/indirect-calorimetry",
+      "maintenanceFluid": "POST /burns/maintenance-fluid",
+      "micronutrients": "POST /burns/micronutrients",
+      "nitrogenBalance": "POST /burns/nitrogen-balance",
+      "pediatricEquations": "POST /burns/pediatric-equations",
+      "pharmacology": "POST /burns/pharmacology",
+      "protein": "POST /burns/protein",
+      "reference": "GET /burns/reference"
+    },
+    "carbCounting": {
+      "carbohydrateContent": "POST /carb-counting/carbohydrate-content",
+      "doseAdjustment": "GET /carb-counting/dose-adjustment",
+      "foods": "GET /carb-counting/foods",
+      "handyMeasures": "GET /carb-counting/handy-measures",
+      "insulinDose": "POST /carb-counting/insulin-dose",
+      "insulinTypes": "GET /carb-counting/insulin-types",
+      "reference": "GET /carb-counting/reference"
+    },
+    "carePlan": {
+      "adime": "POST /care-plan/adime",
+      "reference": "GET /care-plan/reference"
+    },
+    "criticalCare": {
+      "carbohydrate": "POST /critical-care/carbohydrate",
+      "choFatRatio": "GET /critical-care/cho-fat-ratio",
+      "electrolytes": "POST /critical-care/electrolytes",
+      "fat": "GET /critical-care/fat",
+      "fluid": "POST /critical-care/fluid",
+      "nitrogenBalance": "POST /critical-care/nitrogen-balance",
+      "npeNitrogenRatio": "POST /critical-care/npe-nitrogen-ratio",
+      "potassiumDeficit": "POST /critical-care/potassium-deficit",
+      "propofolFat": "POST /critical-care/propofol-fat",
+      "proteinByStress": "POST /critical-care/protein-by-stress",
+      "reference": "GET /critical-care/reference"
+    },
+    "dataQuality": {
+      "audit": "POST /data-quality/audit",
+      "reference": "GET /data-quality/reference"
+    },
+    "developer": {
+      "deleteKeysById": "DELETE /developer/keys/{id}",
+      "getKeys": "GET /developer/keys",
+      "postKeys": "POST /developer/keys"
+    },
+    "diabetes": {
+      "carbCount": "POST /diabetes/carb-count",
+      "carbPlan": "POST /diabetes/carb-plan",
+      "exchangePlan": "POST /diabetes/exchange-plan",
+      "exercise": "POST /diabetes/exercise",
+      "glucoseTargets": "POST /diabetes/glucose-targets",
+      "glycemicLoad": "POST /diabetes/glycemic-load",
+      "hypoglycemia": "POST /diabetes/hypoglycemia",
+      "insulin": "POST /diabetes/insulin",
+      "plan": "POST /diabetes/plan",
+      "reference": "GET /diabetes/reference",
+      "status": "POST /diabetes/status"
+    },
+    "dietaryAssessment": {
+      "create": "POST /dietary-assessment",
+      "reference": "GET /dietary-assessment/reference"
+    },
+    "dri": {
+      "compare": "POST /dri/compare",
+      "lifeStages": "GET /dri/life-stages",
+      "list": "GET /dri"
+    },
+    "drugInteractions": {
+      "bulk": "POST /drug-interactions/bulk",
+      "create": "POST /drug-interactions",
+      "get": "GET /drug-interactions/{id}",
+      "list": "GET /drug-interactions",
+      "remove": "DELETE /drug-interactions/{id}",
+      "replace": "PUT /drug-interactions/{id}",
+      "search": "GET /drug-interactions/search",
+      "update": "PATCH /drug-interactions/{id}"
+    },
+    "energy": {
+      "factors": "GET /energy/factors",
+      "foodEnergy": "POST /energy/food-energy",
+      "requirements": "POST /energy/requirements"
+    },
+    "enteralNutrition": {
+      "calculate": "POST /enteral-nutrition/calculate",
+      "reference": "GET /enteral-nutrition/reference"
+    },
+    "epidemiology": {
+      "analyse": "POST /epidemiology/analyse",
+      "counts": "POST /epidemiology/counts",
+      "reference": "GET /epidemiology/reference"
+    },
+    "exchange": {
+      "bulk": "POST /exchange/bulk"
+    },
+    "export": {
+      "dataset": "POST /export/dataset",
+      "reference": "GET /export/reference",
+      "verify": "POST /export/verify"
+    },
+    "favorites": {
+      "create": "POST /favorites",
+      "list": "GET /favorites",
+      "remove": "DELETE /favorites"
+    },
+    "fentonPreterm": {
+      "bulk": "POST /fenton-preterm/bulk",
+      "chart": "GET /fenton-preterm/chart",
+      "classify": "GET /fenton-preterm/classify",
+      "growth": "POST /fenton-preterm/growth",
+      "profile": "POST /fenton-preterm/profile",
+      "references": "GET /fenton-preterm/references",
+      "velocity": "POST /fenton-preterm/velocity"
+    },
+    "fhir": {
+      "bundleCareContext": "POST /fhir/Bundle/$care-context",
+      "bundleNcpDocument": "POST /fhir/Bundle/$ncp-document",
+      "bundleNutritionAssessment": "POST /fhir/Bundle/$nutrition-assessment",
+      "bundleValidateDocument": "POST /fhir/Bundle/$validate-document",
+      "carePlanIntervene": "POST /fhir/CarePlan/$intervene",
+      "carePlanMonitor": "POST /fhir/CarePlan/$monitor",
+      "codeSystem": "GET /fhir/CodeSystem/{name}",
+      "codeSystemNcpDiagnosis": "GET /fhir/CodeSystem/ncp-diagnosis",
+      "conceptMap": "GET /fhir/ConceptMap/{id}",
+      "conceptMapTranslate": "POST /fhir/ConceptMap/$translate",
+      "conditionDiagnose": "POST /fhir/Condition/$diagnose",
+      "getAuditEvent": "GET /fhir/AuditEvent",
+      "getAuditEventById": "GET /fhir/AuditEvent/{id}",
+      "getQuestionnaire": "GET /fhir/Questionnaire",
+      "getQuestionnaireById": "GET /fhir/Questionnaire/{id}",
+      "goalEvaluate": "POST /fhir/Goal/$evaluate",
+      "metadata": "GET /fhir/metadata",
+      "observationAssessNutrition": "POST /fhir/Observation/$assess-nutrition",
+      "observationEvaluateGrowth": "POST /fhir/Observation/$evaluate-growth",
+      "observationScreen": "POST /fhir/Observation/$screen",
+      "operationDefinition": "GET /fhir/OperationDefinition/{id}",
+      "questionnaireResponseValidate": "POST /fhir/QuestionnaireResponse/$validate",
+      "structureDefinition": "GET /fhir/StructureDefinition/{name}",
+      "validate": "POST /fhir/$validate"
+    },
+    "foods": {
+      "babyFoods": "GET /foods/baby-foods",
+      "bulk": "POST /foods/bulk",
+      "byCategory": "GET /foods/by-category",
+      "compare": "GET /foods/compare",
+      "getConvert": "GET /foods/convert",
+      "getConvertById": "GET /foods/{id}/convert",
+      "label": "GET /foods/{id}/label",
+      "localCategories": "GET /foods/local-categories",
+      "search": "GET /foods/search",
+      "substitutes": "GET /foods/substitutes"
+    },
+    "formulas": {
+      "bulk": "POST /formulas/bulk"
+    },
+    "glycaemicIndex": {
+      "bulk": "POST /glycaemic-index/bulk",
+      "create": "POST /glycaemic-index",
+      "get": "GET /glycaemic-index/{id}",
+      "list": "GET /glycaemic-index",
+      "remove": "DELETE /glycaemic-index/{id}",
+      "replace": "PUT /glycaemic-index/{id}",
+      "update": "PATCH /glycaemic-index/{id}"
+    },
+    "growth": {
+      "assess": "GET /growth/assess"
+    },
+    "hcForAge": {
+      "bulk": "POST /hc-for-age/bulk",
+      "classify": "GET /hc-for-age/classify",
+      "list": "GET /hc-for-age"
+    },
+    "hcVelocity": {
+      "bulk": "POST /hc-velocity/bulk",
+      "classify": "GET /hc-velocity/classify",
+      "list": "GET /hc-velocity"
+    },
+    "health": {
+      "list": "GET /health"
+    },
+    "history": {
+      "create": "POST /history",
+      "list": "GET /history"
+    },
+    "ingredients": {
+      "parse": "POST /ingredients/parse"
+    },
+    "lengthHeightForAge": {
+      "bulk": "POST /length-height-for-age/bulk",
+      "classify": "GET /length-height-for-age/classify",
+      "list": "GET /length-height-for-age"
+    },
+    "lengthVelocity": {
+      "bulk": "POST /length-velocity/bulk",
+      "classify": "GET /length-velocity/classify",
+      "list": "GET /length-velocity"
+    },
+    "log": {
+      "create": "POST /log",
+      "get": "GET /log/{id}",
+      "list": "GET /log",
+      "remove": "DELETE /log/{id}",
+      "summary": "GET /log/summary"
+    },
+    "longitudinal": {
+      "analyse": "POST /longitudinal/analyse",
+      "cohort": "POST /longitudinal/cohort",
+      "reference": "GET /longitudinal/reference"
+    },
+    "malnutrition": {
+      "analyse": "POST /malnutrition/analyse",
+      "reference": "GET /malnutrition/reference"
+    },
+    "mealPlan": {
+      "generate": "POST /meal-plan/generate",
+      "reference": "GET /meal-plan/reference"
+    },
+    "meals": {
+      "analyze": "POST /meals/analyze"
+    },
+    "measures": {
+      "convert": "GET /measures/convert",
+      "list": "GET /measures"
+    },
+    "memory": {
+      "getRecall": "GET /memory/recall",
+      "postRecall": "POST /memory/recall"
+    },
+    "micronutrients": {
+      "assess": "POST /micronutrients/assess",
+      "reference": "GET /micronutrients/reference",
+      "requirements": "GET /micronutrients/requirements"
+    },
+    "ml": {
+      "assess": "POST /ml/assess/{slug}",
+      "models": "GET /ml/models",
+      "status": "GET /ml/status"
+    },
+    "muac": {
+      "classify": "GET /muac/classify"
+    },
+    "muacForAge": {
+      "bulk": "POST /muac-for-age/bulk",
+      "classify": "GET /muac-for-age/classify",
+      "list": "GET /muac-for-age"
+    },
+    "nfpe": {
+      "aspen": "GET /nfpe/aspen",
+      "findings": "GET /nfpe/findings",
+      "interpret": "POST /nfpe/interpret",
+      "reference": "GET /nfpe/reference",
+      "sites": "GET /nfpe/sites",
+      "systems": "GET /nfpe/systems"
+    },
+    "openmrs": {
+      "push": "POST /openmrs/push",
+      "status": "GET /openmrs/status"
+    },
+    "packaged": {
+      "approve": "POST /packaged/{id}/approve",
+      "pending": "GET /packaged/pending",
+      "reject": "POST /packaged/{id}/reject",
+      "replace": "PUT /packaged/{id}"
+    },
+    "paediatric": {
+      "catchUp": "POST /paediatric/catch-up",
+      "energy": "POST /paediatric/energy",
+      "enteralFeeds": "POST /paediatric/enteral-feeds",
+      "fluid": "POST /paediatric/fluid",
+      "growthVelocity": "POST /paediatric/growth-velocity",
+      "plan": "POST /paediatric/plan",
+      "preterm": "POST /paediatric/preterm",
+      "protein": "POST /paediatric/protein",
+      "reference": "GET /paediatric/reference"
+    },
+    "pregnancy": {
+      "assess": "POST /pregnancy/assess",
+      "gestationalAge": "POST /pregnancy/gestational-age",
+      "plan": "POST /pregnancy/plan",
+      "reference": "GET /pregnancy/reference",
+      "weightGain": "POST /pregnancy/weight-gain"
+    },
+    "rag": {
+      "ask": "POST /rag/ask",
+      "enqueue": "POST /rag/enqueue",
+      "getJobs": "GET /rag/jobs",
+      "getJobsById": "GET /rag/jobs/{id}",
+      "source": "DELETE /rag/source",
+      "upload": "POST /rag/upload"
+    },
+    "recipes": {
+      "calculate": "POST /recipes/calculate"
+    },
+    "refeeding": {
+      "initiation": "POST /refeeding/initiation",
+      "reference": "GET /refeeding/reference",
+      "riskAdult": "POST /refeeding/risk-adult",
+      "riskPediatric": "POST /refeeding/risk-pediatric",
+      "severity": "POST /refeeding/severity"
+    },
+    "renal": {
+      "bulk": "POST /renal/bulk"
+    },
+    "renalNutrition": {
+      "adequacy": "POST /renal-nutrition/adequacy",
+      "emergencyDiet": "GET /renal-nutrition/emergency-diet",
+      "foodPlan": "POST /renal-nutrition/food-plan",
+      "labs": "POST /renal-nutrition/labs",
+      "plan": "POST /renal-nutrition/plan",
+      "reference": "GET /renal-nutrition/reference",
+      "requirements": "POST /renal-nutrition/requirements",
+      "stage": "POST /renal-nutrition/stage"
+    },
+    "research": {
+      "convert": "POST /research/convert",
+      "harmonise": "POST /research/harmonise",
+      "reference": "GET /research/reference",
+      "variables": "GET /research/variables"
+    },
+    "sports": {
+      "bodyComposition": "POST /sports/body-composition",
+      "energy": "POST /sports/energy",
+      "fuelTiming": "POST /sports/fuel-timing",
+      "hydration": "POST /sports/hydration",
+      "macros": "POST /sports/macros",
+      "plan": "POST /sports/plan",
+      "reference": "GET /sports/reference",
+      "supplementDose": "POST /sports/supplement-dose"
+    },
+    "stressFactors": {
+      "adjustments": "GET /stress-factors/adjustments",
+      "conditions": "GET /stress-factors/conditions",
+      "fever": "POST /stress-factors/fever",
+      "harrisBenedict": "POST /stress-factors/harris-benedict",
+      "reference": "GET /stress-factors/reference"
+    },
+    "surveillance": {
+      "alerts": "GET /surveillance/alerts",
+      "export": "GET /surveillance/export",
+      "hotspots": "GET /surveillance/hotspots",
+      "insights": "GET /surveillance/insights",
+      "records": "POST /surveillance/records",
+      "reference": "GET /surveillance/reference",
+      "summary": "GET /surveillance/summary",
+      "trainingExport": "GET /surveillance/training-export",
+      "trends": "GET /surveillance/trends"
+    },
+    "weightForAge": {
+      "bulk": "POST /weight-for-age/bulk",
+      "classify": "GET /weight-for-age/classify",
+      "list": "GET /weight-for-age"
+    },
+    "weightForLengthHeight": {
+      "bulk": "POST /weight-for-length-height/bulk",
+      "classify": "GET /weight-for-length-height/classify",
+      "list": "GET /weight-for-length-height"
+    },
+    "weightManagement": {
+      "assess": "POST /weight-management/assess",
+      "bariatric": "GET /weight-management/bariatric",
+      "dietPattern": "POST /weight-management/diet-pattern",
+      "gainPlan": "POST /weight-management/gain-plan",
+      "lossPlan": "POST /weight-management/loss-plan",
+      "progress": "POST /weight-management/progress",
+      "reference": "GET /weight-management/reference"
+    },
+    "weightVelocity": {
+      "bulk": "POST /weight-velocity/bulk",
+      "classify": "GET /weight-velocity/classify",
+      "list": "GET /weight-velocity"
+    }
+  }
+}

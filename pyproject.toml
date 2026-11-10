@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chakudya-sdk"
+version = "1.0.0"
+description = "Python client for the Chakudya Nutrition Registry (CNR), Malawi's open food and clinical nutrition API (api.chakudya.xyz). Zero dependencies."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Edison Taimu" }]
+keywords = ["chakudya", "nutrition", "malawi", "food", "dietetics", "health"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://sdk.chakudya.xyz"
+Repository = "https://github.com/edisontaimu9-ui/chakudya-python"
+
+[tool.setuptools]
+packages = ["chakudya"]
